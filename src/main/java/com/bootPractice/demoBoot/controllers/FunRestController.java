@@ -1,4 +1,4 @@
-package com.bootPractice.demoBoot.rest;
+package com.bootPractice.demoBoot.controllers;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
