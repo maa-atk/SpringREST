@@ -9,4 +9,9 @@ public class CricketCoach implements Coach {
     public String getDailyWorkout() {
         return "Practice Bowl 10min ";
     }
+
+    @Override
+    public String getDailyWorkoutSetterInjection() {
+        return  "prac bowl via setter injection";
+    }
 }
