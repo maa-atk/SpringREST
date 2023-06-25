@@ -10,7 +10,7 @@ public class DemoController {
     private Coach coachObject;
     private Coach coSetter;
     @Autowired
-    public DemoController (@Qualifier("cricketCoach") Coach theCoach){
+    public DemoController (@Qualifier("swimCoach") Coach theCoach){
         System.out.println("DemoConst called");
         coachObject=theCoach;
     }
