@@ -11,6 +11,7 @@ public class DemoController {
     private Coach coSetter;
     @Autowired
     public DemoController (@Qualifier("cricketCoach") Coach theCoach){
+        System.out.println("DemoConst called");
         coachObject=theCoach;
     }
 
@@ -21,11 +22,11 @@ public class DemoController {
     }
 
 //or directly use without any methods or constructors
-    @Autowired
-    private  Coach coachdFieldInjectedl;
+//    @Autowired
+//    private  Coach coachdFieldInjectedl;
 @GetMapping("/work")
     public String getDailyWorkout(){
-        return coachObject.getDailyWorkout()+" "+coSetter.getDailyWorkout()+" "+ coachdFieldInjectedl.getDailyWorkout();
+        return coachObject.getDailyWorkout()+" "+coSetter.getDailyWorkout();
 }
 
 }
