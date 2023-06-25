@@ -1,13 +1,16 @@
 package com.bootPractice.demoBoot.beans;
 
 import com.bootPractice.demoBoot.interfaces.Coach;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CricketCoach implements Coach {
+@Primary
+public class FootBallCoach implements Coach {
     @Override
     public String getDailyWorkout() {
-        return "Practice Bowl 10min ";
+        return "Practice dribbling (from football bean)";
     }
+
 
 }
