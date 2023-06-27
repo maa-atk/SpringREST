@@ -5,4 +5,6 @@ import com.atk.curddemo.entity.Student;
 public interface StudentDAO {
 
     void save(Student student);
+
+    Student find(int i);
 }

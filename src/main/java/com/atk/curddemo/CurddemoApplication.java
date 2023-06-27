@@ -17,8 +17,14 @@ public class CurddemoApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner (StudentDAO studentDAO) {
 		return runner -> {
-			createStudent(studentDAO);
+			//createStudent(studentDAO);
+			findStudent(studentDAO);
+
 		};
+	}
+
+	private void findStudent(StudentDAO studentDAO) {
+		System.out.println(studentDAO.find(1));
 	}
 
 	private void createStudent(StudentDAO studentDAO) {
