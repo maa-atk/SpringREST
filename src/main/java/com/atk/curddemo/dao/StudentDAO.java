@@ -11,4 +11,6 @@ public interface StudentDAO {
     Student find(int i);
 
     List<Student> findAll();
+
+    List<Student> findByLastName(String lname);
 }

@@ -21,9 +21,14 @@ public class CurddemoApplication {
 		return runner -> {
 			//createStudent(studentDAO);
 			//findStudent(studentDAO);
-			findAllStudent(studentDAO);
+			findByLastName(studentDAO);
 
 		};
+	}
+
+	private void findByLastName(StudentDAO studentDAO) {
+		List<Student> result= studentDAO.findByLastName("lastTest");
+		System.out.println(result);
 	}
 
 	private void findAllStudent(StudentDAO studentDAO) {
