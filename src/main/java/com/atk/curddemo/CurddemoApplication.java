@@ -21,9 +21,18 @@ public class CurddemoApplication {
 		return runner -> {
 			//createStudent(studentDAO);
 			//findStudent(studentDAO);
-			findByLastName(studentDAO);
+			//findByLastName(studentDAO);
+			updateStudent(studentDAO);
 
 		};
+	}
+
+	private void updateStudent(StudentDAO studentDAO) {
+		//change lastname of every entry to the lastname tester
+		//returns the num of rows updated
+		Student result= studentDAO.find(1);
+		result.setFirstName("huehue");
+		studentDAO.updateStudents(result);
 	}
 
 	private void findByLastName(StudentDAO studentDAO) {
