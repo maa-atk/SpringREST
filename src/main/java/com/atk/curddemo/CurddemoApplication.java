@@ -22,7 +22,8 @@ public class CurddemoApplication {
 			//createStudent(studentDAO);
 			//findStudent(studentDAO);
 			//findByLastName(studentDAO);
-			updateStudent(studentDAO);
+			//updateStudent(studentDAO);
+			deleteStudent(studentDAO);
 
 		};
 	}
@@ -33,6 +34,9 @@ public class CurddemoApplication {
 		Student result= studentDAO.find(1);
 		result.setFirstName("huehue");
 		studentDAO.updateStudents(result);
+	}
+	private void deleteStudent(StudentDAO studentDAO) {
+		studentDAO.deleteStudent(1);
 	}
 
 	private void findByLastName(StudentDAO studentDAO) {
