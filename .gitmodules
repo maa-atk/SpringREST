@@ -1,0 +1,3 @@
+[submodule "springBasics/SpringRest"]
+	path = springBasics/SpringRest
+	url = https://github.com/maa-atk/SpringREST
